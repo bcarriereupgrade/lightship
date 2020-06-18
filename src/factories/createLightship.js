@@ -266,6 +266,7 @@ export default (userConfiguration?: ConfigurationInputType): LightshipType => {
   };
 
   return {
+    app,
     createBeacon,
     isServerReady: () => {
       return serverIsReady;

@@ -3,6 +3,9 @@
 import type {
   Server,
 } from 'http';
+import type {
+  Application,
+} from 'express';
 
 /**
  * A teardown function called when shutdown is initialized.
@@ -60,6 +63,7 @@ export type LightshipType = {|
   +isServerShuttingDown: () => boolean,
   +registerShutdownHandler: (shutdownHandler: ShutdownHandlerType) => void,
   +server: Server,
+  +app: Application,
   +shutdown: () => Promise<void>,
   +signalNotReady: () => void,
   +signalReady: () => void,
