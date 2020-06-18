@@ -62,7 +62,6 @@
   "license": "BSD-3-Clause",
   "main": "./dist/index.js",
   "name": "lightship",
-  "private": true,
   "nyc": {
     "include": [
       "src/**/*.js"
@@ -75,6 +74,9 @@
       "@babel/register"
     ],
     "sourceMap": false
+  },
+  "publishConfig": {
+    "registry": "https://artifactory.build.upgrade.com/artifactory/api/npm/npm-local"
   },
   "repository": {
     "type": "git",
